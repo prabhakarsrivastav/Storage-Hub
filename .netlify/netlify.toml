@@ -1,0 +1,26 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\SUBARNA MONDAL\\Desktop\\my-projects\\gigma"
+publishOrigin = "default"
+base = "C:\\Users\\SUBARNA MONDAL\\Desktop\\my-projects\\gigma"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-left">Your one stop destination for all your Computer needs!</div>
+                <div class="top-right">
+                    <span>Email : info@shreesales.co.in</span>
+                    <span>Support : + 91-93303-18572</span>
+                    <span>PC Builds : + 91-93303-18572</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container">
+                <a href="/" class="logo" style="text-decoration: none;">
+                    <img src="../assets/images/logo-icon.png" alt="Storage Hub" class="logo-icon">
+                    <span class="logo-text">
+                        <span class="logo-storage" style="color: #F5820D;">STORAGE</span>
+                        <span class="logo-hub" style="color: #ffff;">HUB</span>
+                    </span>
+                </a>
+
+                <div class="search-box">
+                    <select class="category-select">
+                        <option>All Categories</option>
+                        <option>Gaming</option>
+                        <option>Streaming</option>
+                        <option>Components</option>
+                        <option>PC Builds</option>
+                        <option>Monitors</option>
+                    </select>
+                    <input type="text" placeholder="Search for products">
+                    <button class="search-btn">Search</button>
+                </div>
+
+                <div class="header-icons">
+                    <div class="icon-item">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="icon-text">
+                            <span class="sub-text">Login</span>
+                            <span class="main-text">Account</span>
+                        </div>
+                    </div>
+                    <div class="icon-item badge-container">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="badge">0</span>
+                    </div>
+                    <div class="icon-item cart-container">
+                        <div class="badge-container">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="badge">0</span>
+                        </div>
+                        <a href="../cart/cart.html" style="text-decoration: none;">
+                            <div class="icon-text">
+                                <span class="sub-text">Your Cart</span>
+                                <span class="main-text">Rs. 0.00</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-bar">
+            <div class="container">
+
+                <!-- Hamburger -->
+                <input type="checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <!-- Nav Links -->
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+
+                    <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
+                        onmouseout="this.children[1].style.display='none'">
+
+                        <a href="#" style="color:#fff; display:flex; align-items:center; gap:6px;">
+                            Gaming <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i>
+                        </a>
+
+                        <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
+             padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Gaming PCs</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Keyboards</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Mouse</a></li>
+                        </ul>
+                    </li>
+
+                    <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
+                        onmouseout="this.children[1].style.display='none'">
+
+                        <a href="#" style="color:#fff; display:flex; align-items:center; gap:6px;">
+                            PC Builds <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i>
+                        </a>
+
+                        <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
+             padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Budget Build</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Mid Range</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">High End</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Monitors</a></li>
+                    <li><a href="#">Custom PC Quote</a></li>
+                    <li><a href="#">Our Stores</a></li>
+
+                    <li class="promo-item">
+                        <a href="#" class="promo-link">
+                            <i class="fa-solid fa-percent"></i> Special Deals on Razer
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="product-listing">
+
+        <div class="layout">
+
+            <!-- ================= SIDEBAR ================= -->
+            <aside class="filters">
+
+                <div class="filter-group">
+                    <h4>Brand</h4>
+                    <div class="two-col">
+                        <label><input type="checkbox"> Acer</label>
+                        <label><input type="checkbox"> ADATA</label>
+                        <label><input type="checkbox"> Colorful</label>
+                        <label><input type="checkbox"> Corsair</label>
+                        <label><input type="checkbox"> Crucial</label>
+                        <label><input type="checkbox"> EVM</label>
+                        <label><input type="checkbox"> G.Skill</label>
+                        <label><input type="checkbox"> Kingston</label>
+                        <label><input type="checkbox"> Netac</label>
+                        <label><input type="checkbox"> Silicon Power</label>
+                        <label><input type="checkbox"> Teamgroup</label>
+                        <label><input type="checkbox"> Thermaltake</label>
+                        <label><input type="checkbox"> V-Color</label>
+                        <label><input type="checkbox"> XPG (ADATA)</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Stock Status</h4>
+                    <label><input type="checkbox"> In stock</label>
+                    <label><input type="checkbox"> Out of stock</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Category</h4>
+                    <label><input type="checkbox"> RAM (Memory)</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Ram Capacity</h4>
+                    <div class="two-col">
+                        <label><input type="checkbox"> 4 GB</label>
+                        <label><input type="checkbox"> 8 GB</label>
+                        <label><input type="checkbox"> 16 GB</label>
+                        <label><input type="checkbox"> 24 GB</label>
+                        <label><input type="checkbox"> 32 GB</label>
+                        <label><input type="checkbox"> 48 GB</label>
+                        <label><input type="checkbox"> 64 GB</label>
+                        <label><input type="checkbox"> 96 GB</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Ram Type</h4>
+                    <label><input type="checkbox"> DDR3</label>
+                    <label><input type="checkbox"> DDR4</label>
+                    <label><input type="checkbox"> DDR5</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Ram Channel Kit</h4>
+                    <div class="two-col">
+                        <label><input type="checkbox"> 1 x 8 GB</label>
+                        <label><input type="checkbox"> 2 x 8 GB</label>
+                        <label><input type="checkbox"> 2 x 16 GB</label>
+                        <label><input type="checkbox"> 2 x 32 GB</label>
+                        <label><input type="checkbox"> 4 x 8 GB</label>
+                        <label><input type="checkbox"> 4 x 16 GB</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Ram Speed</h4>
+                    <div class="two-col">
+                        <label><input type="checkbox"> 2400 MHz</label>
+                        <label><input type="checkbox"> 2666 MHz</label>
+                        <label><input type="checkbox"> 3200 MHz</label>
+                        <label><input type="checkbox"> 3600 MHz</label>
+                        <label><input type="checkbox"> 4800 MHz</label>
+                        <label><input type="checkbox"> 5200 MHz</label>
+                        <label><input type="checkbox"> 6000 MHz</label>
+                        <label><input type="checkbox"> 6400 MHz</label>
+                        <label><input type="checkbox"> 7200 MHz</label>
+                        <label><input type="checkbox"> 8000 MHz</label>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- ================= PRODUCTS ================= -->
+            <main class="products">
+
+                <div class="products-header">
+                    <h3>Pendrive <span>→ Acer</span></h3>
+                    <p>Showing 1–24 of 86 results</p>
+                </div>
+
+                <div class="product-grid">
+
+                    <!-- Repeat product cards -->
+                    <div class="product-card">
+                        <!-- Wishlist Toggle -->
+                        <input type="checkbox" id="wish1" class="wishlist-toggle">
+                        <label for="wish1" class="wishlist-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+
+                        <span class="badge">-20%</span>
+                        <a href="../producta_details/product_det.html"><img src="../figmaassets/pe1.png"></a>
+                        <h5>XYZ 16GB DDR4 3200MHz</h5>
+                        <p class="sku">ABCD1234</p>
+                        <p class="price">₹3,499 <span style="color: red;">₹4,399</span></p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+
+                        <!-- Wishlist Toggle -->
+                        <input type="checkbox" id="wish2" class="wishlist-toggle">
+                        <label for="wish2" class="wishlist-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+
+                        <span class="badge">-25%</span>
+                        <a href="../producta_details/product_det.html"><img src="../figmaassets/pe2.png"></a>
+                        <h5>XYZ 32GB DDR4 3600MHz</h5>
+                        <p class="sku">ABCD1235</p>
+                        <p class="price">₹6,999 <span style="color: red;">₹9,299</span></p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <!-- Wishlist Toggle -->
+                        <input type="checkbox" id="wish3" class="wishlist-toggle">
+                        <label for="wish3" class="wishlist-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                        <span class="badge">-30%</span>
+                        <a href="../producta_details/product_det.html"><img src="../figmaassets/pe3.png"></a>
+                        <h5>XYZ 64GB DDR5 5200MHz</h5>
+                        <p class="sku">ABCD1236</p>
+                        <p class="price">₹14,999 <span style="color: red;">₹21,499</span></p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <!-- Wishlist Toggle -->
+                        <input type="checkbox" id="wish4" class="wishlist-toggle">
+                        <label for="wish4" class="wishlist-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                        <span class="badge">-15%</span>
+                        <a href="../producta_details/product_det.html"><img src="../figmaassets/pe4.png"></a>
+                        <h5>XYZ 8GB DDR4 2666MHz</h5>
+                        <p class="sku">ABCD1237</p>
+                        <p class="price">₹1,899 <span style="color: red;">₹2,199</span></p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <!-- Wishlist Toggle -->
+                        <input type="checkbox" id="wish5" class="wishlist-toggle">
+                        <label for="wish5" class="wishlist-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                        <span class="badge">-22%</span>
+                        <a href="../producta_details/product_det.html"><img src="../figmaassets/pe5.png"></a>
+                        <h5>XYZ 32GB DDR5 6000MHz</h5>
+                        <p class="sku">ABCD1238</p>
+                        <p class="price">₹10,499 <span style="color: red;">₹13,499</span></p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <!-- Wishlist Toggle -->
+                        <input type="checkbox" id="wish6" class="wishlist-toggle">
+                        <label for="wish6" class="wishlist-heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                        <span class="badge">-18%</span>
+                        <a href="../producta_details/product_det.html"><img src="../figmaassets/pe6.png"></a>
+                        <h5>XYZ 128GB DDR5 Kit</h5>
+                        <p class="sku">ABCD1239</p>
+                        <p class="price">₹22,999 <span style="color: red;">₹27,999</span></p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <!-- Newsletter Row -->
+        <div class="footer-top">
+            <h3>Sign up to Newsletter</h3>
+
+            <div class="newsletter-box">
+                <input type="email" placeholder="Your Email Address">
+                <button><i class="fa-solid fa-envelope"></i></button>
+            </div>
+
+            <div class="social-box">
+                <span>Follow us on:</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer Links -->
+        <div class="footer-middle">
+
+            <div class="footer-col">
+                <h4>Privacy Policy</h4>
+                <p>Returns & Exchanges</p>
+                <p>Payment Terms</p>
+                <p>Delivery Terms</p>
+                <p>Payment & Pricing</p>
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Get Involved</h4>
+                <p>About Us</p>
+                <p>Our Vision</p>
+                <p>Orders & Shipping</p>
+                <p>Office Supplies</p>
+                <p>Contact Us</p>
+                <p>Customer Service</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Stay Informed</h4>
+
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Your email">
+                    <button>Subscribe</button>
+                </div>
+
+                <small>
+                    Our newsletter to receive early discount offers,<br>
+                    updates and new products info.
+                </small>
+
+                <h5>Download Our App</h5>
+                <div class="app-links">
+                    <a href="#">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            alt="Google Play">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-brand">
+                <span class="logo-storage" style="color: #F5820D;">STORAGE</span>
+                <span class="logo-hub" style="color: #ffff;">HUB</span>
+            </div>
+
+            <div class="footer-info">
+                <span><i class="fa-solid fa-headset"></i> +0080 1234 56 789</span>
+                <span><i class="fa-solid fa-truck"></i> Amounts over Rs.100</span>
+                <span><i class="fa-solid fa-tag"></i> Save up to 20%</span>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            © 2022 CODE INTERACTIVE. ALL RIGHTS RESERVED
+            <div class="payment-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg">
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

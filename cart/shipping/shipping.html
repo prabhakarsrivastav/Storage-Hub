@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shipping.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-left">Your one stop destination for all your Computer needs!</div>
+                <div class="top-right">
+                    <span>Email : info@shreesales.co.in</span>
+                    <span>Support : + 91-93303-18572</span>
+                    <span>PC Builds : + 91-93303-18572</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container">
+                <a href="/" class="logo" style="text-decoration: none;">
+                    <img src="../../assets/images/logo-icon.png" alt="Storage Hub" class="logo-icon">
+                    <span class="logo-text">
+                        <span class="logo-storage" style="color: #F5820D;">STORAGE</span>
+                        <span class="logo-hub" style="color: #ffff;">HUB</span>
+                    </span>
+                </a>
+
+                <div class="search-box">
+                    <select class="category-select">
+                        <option>All Categories</option>
+                        <option>Gaming</option>
+                        <option>Streaming</option>
+                        <option>Components</option>
+                        <option>PC Builds</option>
+                        <option>Monitors</option>
+                    </select>
+                    <input type="text" placeholder="Search for products">
+                    <button class="search-btn">Search</button>
+                </div>
+
+                <div class="header-icons">
+                    <div class="icon-item">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="icon-text">
+                            <span class="sub-text">Login</span>
+                            <span class="main-text">Account</span>
+                        </div>
+                    </div>
+                    <div class="icon-item badge-container">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="badge">0</span>
+                    </div>
+                    <div class="icon-item cart-container">
+                        <div class="badge-container">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="badge">0</span>
+                        </div>
+                        <a href="../cart/cart.html" style="text-decoration: none;">
+                            <div class="icon-text">
+                                <span class="sub-text">Your Cart</span>
+                                <span class="main-text">Rs. 0.00</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-bar">
+            <div class="container">
+
+                <!-- Hamburger -->
+                <input type="checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <!-- Nav Links -->
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+
+                    <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
+                        onmouseout="this.children[1].style.display='none'">
+
+                        <a href="#" style="color:#fff; display:flex; align-items:center; gap:6px;">
+                            Gaming <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i>
+                        </a>
+
+                        <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
+             padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Gaming PCs</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Keyboards</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Mouse</a></li>
+                        </ul>
+                    </li>
+
+                    <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
+                        onmouseout="this.children[1].style.display='none'">
+
+                        <a href="#" style="color:#fff; display:flex; align-items:center; gap:6px;">
+                            PC Builds <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i>
+                        </a>
+
+                        <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
+             padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Budget Build</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Mid Range</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">High End</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Monitors</a></li>
+                    <li><a href="#">Custom PC Quote</a></li>
+                    <li><a href="#">Our Stores</a></li>
+
+                    <li class="promo-item">
+                        <a href="#" class="promo-link">
+                            <i class="fa-solid fa-percent"></i> Special Deals on Razer
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <!-- HERO BACKGROUND -->
+    <div style="
+      position: relative;
+
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,0.30),
+          rgba(0,0,0,0.65)
+        ),
+        url('../../image4/fog.png');
+
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+
+      padding: 40px 0 0;
+      min-height: 520px;
+    ">
+
+        <div class="progress-container">
+
+            <div class="progress-line active"></div>
+
+            <div class="step active">
+                <div class="step-num">1</div>
+                <p>Shopping Cart</p>
+            </div>
+            <div class="progress-line active"></div>
+            <div class="step">
+                <div class="step-num" style="border: 2px solid #fff; border-radius: 50%; ;">2</div>
+                <p>Shipping and Checkout</p>
+            </div>
+            <div class="progress-line"></div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <p>Confirmation</p>
+            </div>
+            <div class="progress-line"></div>
+        </div>
+
+
+
+
+        <!-- CHECKOUT SECTION -->
+        <section class="checkout-section">
+
+            <!-- Coupon -->
+            <div class="checkout-coupon">
+                Have a coupon? <a href="#">Click here to enter your code</a>
+            </div>
+
+            <div class="checkout-grid">
+
+                <!-- LEFT : BILLING DETAILS -->
+                <div class="checkout-billing">
+
+                    <h3>Billing Details</h3>
+
+                    <div class="checkout-row">
+                        <div class="checkout-field">
+                            <label>First name *</label>
+                            <input type="text">
+                        </div>
+                        <div class="checkout-field">
+                            <label>Last name *</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Company name (optional)</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Country / Region *</label>
+                        <select>
+                            <option>United States (US)</option>
+                        </select>
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Street address *</label>
+                        <input type="text">
+                        <input type="text">
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Town / City *</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>State *</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>ZIP Code *</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Phone *</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="checkout-field">
+                        <label>Email address *</label>
+                        <input type="email">
+                    </div>
+
+                    <h4>Ship to a different address?</h4>
+
+                    <div class="checkout-field">
+                        <label>Order notes (optional)</label>
+                        <textarea placeholder="Notes about your order, e.g. special notes for delivery.">
+
+                            </textarea>
+                        <button style="
+                                height: 35px;
+                                width: 120px;
+                                background-color: #e10600;
+                                color: #ffffff;
+                                border: none;
+                                padding: 6px 12px;
+                                font-size: 11px;
+                                font-weight: 500;
+                                text-transform: uppercase;
+                                border-radius: 3px;
+                                cursor: pointer;
+                                margin-top: 10px;
+                                ">
+                            Return to Shop
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT : ORDER SUMMARY SIDEBAR -->
+                <aside class="checkout-sidebar">
+
+                    <h3 class="sidebar-title">Additional Information</h3>
+
+                    <div class="sidebar-product">
+                        <img src="../../assets/images/ram-crucial-black.png" alt="">
+                        <span>Biwin M100 256GB 2.5 SATA SSD BM100N256G-RTX</span>
+                    </div>
+
+                    <div class="sidebar-box">
+
+                        <div class="sidebar-row">
+                            <span>Subtotal</span>
+                            <span>Rs. 1,870</span>
+                        </div>
+
+                        <div class="sidebar-row">
+                            <span>
+                                Coupon: wcpd_wc-<br>
+                                upi_k17aamewgdgfmm1gxn
+                            </span>
+                            <span>Rs. 37 <small>[Remove]</small></span>
+                        </div>
+
+                        <div class="sidebar-row column">
+                            <span>Shipping</span>
+                            <label class="radio">
+                                <input type="radio" checked>
+                                Free Shipping
+                            </label>
+                        </div>
+
+                        <div class="sidebar-row">
+                            <span>Packing Charges</span>
+                            <span>Rs. 1,870</span>
+                        </div>
+
+                        <div class="sidebar-row total">
+                            <span>Total</span>
+                            <span>Rs. 1,915</span>
+                        </div>
+
+                        <!-- Payment -->
+                        <div class="payment-methods">
+                            <label>
+                                <input type="radio" checked>
+                                Wallet/EMI/Cash/Credit/Debit Card/CCAvenue
+                            </label>
+
+                            <label>
+                                <input type="radio">
+                                <strong>Pay with UPI QR Code (Flat 2% Instant Discount)</strong>
+                            </label>
+
+                            <p class="discount-note">(2% off)</p>
+
+                            <p class="upi-note">
+                                It uses UPI apps like BHIM, Paytm, Google Pay, PhonePe<br>
+                                or any Banking UPI app to make payments.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p class="privacy-note">
+                        Your personal data will be used to process your order, support your experience
+                        throughout this website, and for other purposes described in our
+                        <a href="#">privacy policy</a>.
+                    </p>
+
+                    <label class="sidebar-checkbox">
+                        <input type="checkbox">
+                        I have read and agree to the website <a href="#">terms and conditions</a>
+                    </label>
+
+                    <label class="sidebar-checkbox">
+                        <input type="checkbox">
+                        Subscribe to our Newsletter
+                    </label>
+
+                    <a href="../payment/payment.html"><button class="sidebar-btn">
+                            🔒 Proceed to Payment
+                        </button>
+                    </a>
+                </aside>
+
+            </div>
+        </section>
+
+
+
+
+        <section class="order-section">
+
+            <div class="order-wrapper">
+
+                <!-- LEFT SIDE -->
+                <div class="order-left">
+
+                    <!-- Order Table -->
+                    <div class="order-table">
+                        <div class="order-row header">
+                            <span>Product</span>
+                            <span>Subtotal</span>
+                        </div>
+
+                        <div class="order-row">
+                            <span>3 M Reusable Respirator × 3</span>
+                            <span>5000</span>
+                        </div>
+
+                        <div class="order-row">
+                            <span>Subtotal</span>
+                            <span class="highlight">6000</span>
+                        </div>
+
+                        <div class="order-row total">
+                            <span>Total</span>
+                            <span class="highlight">11,000</span>
+                        </div>
+                    </div>
+
+                    <!-- Continue Shopping -->
+                    <a href="../cart/cart.html"><button class="btn-secondary">Continue Shopping</button></a>
+
+                    <!-- Coupon -->
+                    <div class="coupon-box">
+                        <span>Have a coupon?</span>
+                        <a href="#">Click here to enter your code</a>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="order-right">
+
+                    <div class="payment-box">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            sorry, it seems that there are no available payment methods for your state.
+                            please contact us if you require assistance or wish to make alternate arrangements.
+                        </label>
+
+                        <div class="divider"></div>
+
+                        <p class="privacy-text">
+                            your personal data will be used to process your order, support your experience
+                            throughout this website, and for other purpose described in our
+                            <a href="#">privacy policy</a>.
+                        </p>
+
+                        <button class="btn-primary">Place Order</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+        <section class="checkout-accordion">
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span>About Our Service</span>
+                    <span class="arrow">⌄</span>
+                </summary>
+                <div class="accordion-content">
+                    <p><strong>100% Genuine Products</strong></p>
+                    <p>All products are sourced directly from authorized distributors.</p>
+
+                    <p><strong>Secure Checkout</strong></p>
+                    <p>Your payments are protected with trusted gateways.</p>
+
+                    <p><strong>Fast Shipping</strong></p>
+                    <p>Orders ship within 24–48 hours.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span>Delivery Option</span>
+                    <span class="arrow">⌄</span>
+                </summary>
+                <div class="accordion-content">
+                    <p><strong>Standard Delivery</strong></p>
+                    <p>Delivered within 3–5 business days</p>
+                    <p>Cost: <strong>Free</strong></p>
+                </div>
+            </details>
+
+            <details class="accordion-item">
+                <summary class="accordion-header">
+                    <span>Shipping Address</span>
+                    <span class="arrow">⌄</span>
+                </summary>
+                <div class="accordion-content">
+                    <p>Orders are delivered to the address provided during checkout.</p>
+                    <p>Please ensure address details are correct.</p>
+                </div>
+            </details>
+
+            <details class="accordion-item" open>
+                <summary class="accordion-header">
+                    <span>Payment Method</span>
+                    <span class="arrow">⌄</span>
+                </summary>
+                <div class="accordion-content">
+                    <p><strong>Multiple Payment Options</strong></p>
+                    <p>UPI, Debit Card, Credit Card, Wallets</p>
+                    <p><strong>UPI QR</strong> gives <strong>2% instant discount</strong></p>
+                </div>
+            </details>
+
+        </section>
+
+
+
+
+        <section class="image-banner">
+            <div class="image-banner-inner">
+                <img src="../../figmaassets/Component 4 (1).png" alt="Banner">
+            </div>
+        </section>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+
+        <!-- Newsletter Row -->
+        <div class="footer-top">
+            <h3>Sign up to Newsletter</h3>
+
+            <div class="newsletter-box">
+                <input type="email" placeholder="Your Email Address">
+                <button><i class="fa-solid fa-envelope"></i></button>
+            </div>
+
+            <div class="social-box">
+                <span>Follow us on:</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer Links -->
+        <div class="footer-middle">
+
+            <div class="footer-col">
+                <h4>Privacy Policy</h4>
+                <p>Returns & Exchanges</p>
+                <p>Payment Terms</p>
+                <p>Delivery Terms</p>
+                <p>Payment & Pricing</p>
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Get Involved</h4>
+                <p>About Us</p>
+                <p>Our Vision</p>
+                <p>Orders & Shipping</p>
+                <p>Office Supplies</p>
+                <p>Contact Us</p>
+                <p>Customer Service</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Stay Informed</h4>
+
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Your email">
+                    <button>Subscribe</button>
+                </div>
+
+                <small>
+                    Our newsletter to receive early discount offers,<br>
+                    updates and new products info.
+                </small>
+
+                <h5>Download Our App</h5>
+                <div class="app-links">
+                    <a href="#">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            alt="Google Play">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-brand">
+                <span class="logo-storage" style="color: #F5820D;">STORAGE</span>
+                <span class="logo-hub" style="color: #ffff;">HUB</span>
+            </div>
+
+            <div class="footer-info">
+                <span><i class="fa-solid fa-headset"></i> +0080 1234 56 789</span>
+                <span><i class="fa-solid fa-truck"></i> Amounts over Rs.100</span>
+                <span><i class="fa-solid fa-tag"></i> Save up to 20%</span>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            © 2022 CODE INTERACTIVE. ALL RIGHTS RESERVED
+            <div class="payment-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg">
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

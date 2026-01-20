@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-left">Your one stop destination for all your Computer needs!</div>
+                <div class="top-right">
+                    <span>Email : info@shreesales.co.in</span>
+                    <span>Support : + 91-93303-18572</span>
+                    <span>PC Builds : + 91-93303-18572</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container">
+                <a href="/" class="logo" style="text-decoration: none;">
+                    <img src="../../assets/images/logo-icon.png" alt="Storage Hub" class="logo-icon">
+                    <span class="logo-text">
+                        <span class="logo-storage" style="color: #F5820D;">STORAGE</span>
+                        <span class="logo-hub" style="color: #ffff;">HUB</span>
+                    </span>
+                </a>
+
+                <div class="search-box">
+                    <select class="category-select">
+                        <option>All Categories</option>
+                        <option>Gaming</option>
+                        <option>Streaming</option>
+                        <option>Components</option>
+                        <option>PC Builds</option>
+                        <option>Monitors</option>
+                    </select>
+                    <input type="text" placeholder="Search for products">
+                    <button class="search-btn">Search</button>
+                </div>
+
+                <div class="header-icons">
+                    <div class="icon-item">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="icon-text">
+                            <span class="sub-text">Login</span>
+                            <span class="main-text">Account</span>
+                        </div>
+                    </div>
+                    <div class="icon-item badge-container">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="badge">0</span>
+                    </div>
+                    <div class="icon-item cart-container">
+                        <div class="badge-container">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="badge">0</span>
+                        </div>
+                        <a href="../cart/cart.html" style="text-decoration: none;">
+                            <div class="icon-text">
+                                <span class="sub-text">Your Cart</span>
+                                <span class="main-text">Rs. 0.00</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-bar">
+            <div class="container">
+
+                <!-- Hamburger -->
+                <input type="checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <!-- Nav Links -->
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+
+                    <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
+                        onmouseout="this.children[1].style.display='none'">
+
+                        <a href="#" style="color:#fff; display:flex; align-items:center; gap:6px;">
+                            Gaming <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i>
+                        </a>
+
+                        <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
+             padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Gaming PCs</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Keyboards</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Mouse</a></li>
+                        </ul>
+                    </li>
+
+                    <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
+                        onmouseout="this.children[1].style.display='none'">
+
+                        <a href="#" style="color:#fff; display:flex; align-items:center; gap:6px;">
+                            PC Builds <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i>
+                        </a>
+
+                        <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
+             padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Budget Build</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Mid Range</a></li>
+                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">High End</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Monitors</a></li>
+                    <li><a href="#">Custom PC Quote</a></li>
+                    <li><a href="#">Our Stores</a></li>
+
+                    <li class="promo-item">
+                        <a href="#" class="promo-link">
+                            <i class="fa-solid fa-percent"></i> Special Deals on Razer
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <a href="#" style="display:block; text-decoration:none; color:inherit;">
+
+        <!-- HERO BACKGROUND -->
+        <div style="
+      position: relative;
+
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,0.30),
+          rgba(0,0,0,0.65)
+        ),
+        url('../../image4/fog.png');
+
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+
+      padding: 40px 0 0;
+      min-height: 520px;
+    ">
+
+            <div class="progress-container">
+
+                <div class="progress-line active"></div>
+
+                <div class="step active">
+                    <div class="step-num">1</div>
+                    <p>Shopping Cart</p>
+                </div>
+                <div class="progress-line active"></div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <p>Shipping and Checkout</p>
+                </div>
+                <div class="progress-line active"></div>
+                <div class="step">
+                    <div class="step-num" style="border: 2px solid #fff; border-radius: 50%; ;">3</div>
+                    <p>Confirmation</p>
+                </div>
+                <div class="progress-line active"></div>
+            </div>
+
+
+
+            <section class="qr-payment-section">
+
+                <div class="qr-wrapper">
+
+                    <!-- LEFT : ORDER DETAILS -->
+                    <div class="order-details">
+
+                        <h4>Order Details</h4>
+
+                        <p><strong>Order Number:</strong> 68545</p>
+                        <p><strong>Date:</strong> December 20, 2025</p>
+                        <p><strong>Total:</strong> Rs. 73,003</p>
+                        <p>
+                            <strong>Payment Method:</strong><br>
+                            Pay with UPI QR Code (Flat 2% Discount)
+                        </p>
+
+                    </div>
+
+                    <!-- RIGHT : QR CARD -->
+                    <div class="qr-card">
+
+                        <h3>Scan this QR Code</h3>
+
+                        <p class="merchant-id">
+                            MERCHANT UPI ID :
+                            <span>PRIMEHHHGBBNJJN@ICICI</span>
+                        </p>
+
+                        <img src="../../figmaassets/qr.png" alt="UPI QR Code" class="qr-image">
+
+                        <p class="amount">
+                            AMOUNT TO BE PAID :
+                            <span>Rs. 73,003</span>
+                        </p>
+
+                        <p class="instructions">
+                            Please scan the QR code with any UPI app to pay for your order.
+                            After payment, enter the UPI Reference ID or Transaction Number
+                            on the next screen. We will manually verify your payment.
+                        </p>
+
+                        <p class="warning">
+                            AT THE TIME OF PAYMENT, PLEASE ENTER
+                            <strong>"ORDER ID 68545"</strong>
+                            IN UPI PAYMENT SCREEN AS MESSAGE FOR FUTURE REFERENCE.
+                        </p>
+
+                        <a href="../confirmation/confirm.html"><button class="qr-btn">Proceed to Next Step</button></a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+        </div>
+
+
+
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+
+        <!-- Newsletter Row -->
+        <div class="footer-top">
+            <h3>Sign up to Newsletter</h3>
+
+            <div class="newsletter-box">
+                <input type="email" placeholder="Your Email Address">
+                <button><i class="fa-solid fa-envelope"></i></button>
+            </div>
+
+            <div class="social-box">
+                <span>Follow us on:</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer Links -->
+        <div class="footer-middle">
+
+            <div class="footer-col">
+                <h4>Privacy Policy</h4>
+                <p>Returns & Exchanges</p>
+                <p>Payment Terms</p>
+                <p>Delivery Terms</p>
+                <p>Payment & Pricing</p>
+                <p>Terms of Use</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Get Involved</h4>
+                <p>About Us</p>
+                <p>Our Vision</p>
+                <p>Orders & Shipping</p>
+                <p>Office Supplies</p>
+                <p>Contact Us</p>
+                <p>Customer Service</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Stay Informed</h4>
+
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Your email">
+                    <button>Subscribe</button>
+                </div>
+
+                <small>
+                    Our newsletter to receive early discount offers,<br>
+                    updates and new products info.
+                </small>
+
+                <h5>Download Our App</h5>
+                <div class="app-links">
+                    <a href="#">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                            alt="Google Play">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-brand">
+                <span class="logo-storage" style="color: #F5820D;">STORAGE</span>
+                <span class="logo-hub" style="color: #ffff;">HUB</span>
+            </div>
+
+            <div class="footer-info">
+                <span><i class="fa-solid fa-headset"></i> +0080 1234 56 789</span>
+                <span><i class="fa-solid fa-truck"></i> Amounts over Rs.100</span>
+                <span><i class="fa-solid fa-tag"></i> Save up to 20%</span>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            © 2022 CODE INTERACTIVE. ALL RIGHTS RESERVED
+            <div class="payment-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg">
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>
