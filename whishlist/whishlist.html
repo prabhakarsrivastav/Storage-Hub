@@ -52,7 +52,9 @@
 
                 <div class="header-icons">
                     <div class="icon-item">
-                        <i class="fa-regular fa-user"></i>
+                        <a href="../login & registration/login.html" style="text-decoration:none; color:#fff;">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
                         <div class="icon-text">
 
                             <span class="sub-text">Login</span>
@@ -60,7 +62,7 @@
                         </div>
                     </div>
                     <div class="icon-item badge-container">
-                        <i class="fa-regular fa-heart"></i>
+                        <a href="../whishlist/whishlist.html" style="text-decoration:none; color:#fff;"><i class="fa-regular fa-heart"></i></a>
                         <span class="badge">0</span>
                     </div>
                     <div class="icon-item cart-container">
@@ -71,7 +73,7 @@
                         <a href="../cart/cart.html" style="text-decoration: none;">
                             <div class="icon-text">
                                 <span class="sub-text">Your Cart</span>
-                                <span class="main-text">Rs. 0.00</span>
+                                <span class="main-text" style="text-decoration:none; color:#fff;">Rs. 0.00</span>
                             </div>
                         </a>
                     </div>
@@ -94,20 +96,35 @@
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
 
-                    <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
-                        onmouseout="this.children[1].style.display='none'">
+                    <li style="position:relative;" onmouseenter="this.querySelector('ul').style.display='block'"
+                        onmouseleave="this.querySelector('ul').style.display='none'">
 
                         <a href="#" style="color:#fff; display:flex; align-items:center; gap:6px;">
                             Gaming <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i>
                         </a>
 
-                        <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
-             padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Gaming PCs</a></li>
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Keyboards</a></li>
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Mouse</a></li>
+                        <ul style="
+                                                position:absolute;
+                                                top:100%;
+                                                left:0;
+                                                background:#0a0a0a;
+                                                list-style:none;
+                                                padding:8px 0;
+                                                margin-top:6px;          /* 🔥 hover buffer */
+                                                min-width:180px;
+                                                border:1px solid #222;
+                                                display:none;
+                                                z-index:9999;            /* 🔥 stay above others */
+                                            ">
+                            <li><a href="../products/products.html"
+                                    style="display:block; padding:10px 16px; color:#fff;">Gaming PCs</a></li>
+                            <li><a href="../products/products.html"
+                                    style="display:block; padding:10px 16px; color:#fff;">Keyboards</a></li>
+                            <li><a href="../products/products.html"
+                                    style="display:block; padding:10px 16px; color:#fff;">Mouse</a></li>
                         </ul>
                     </li>
+
 
                     <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
                         onmouseout="this.children[1].style.display='none'">
@@ -118,18 +135,21 @@
 
                         <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
              padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Budget Build</a></li>
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Mid Range</a></li>
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">High End</a></li>
+                            <li><a href="../products/products.html"
+                                    style="display:block; padding:10px 16px; color:#fff;">Budget Build</a></li>
+                            <li><a href="../products/products.html"
+                                    style="display:block; padding:10px 16px; color:#fff;">Mid Range</a></li>
+                            <li><a href="../products/products.html"
+                                    style="display:block; padding:10px 16px; color:#fff;">High End</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="#">Monitors</a></li>
-                    <li><a href="#">Custom PC Quote</a></li>
-                    <li><a href="#">Our Stores</a></li>
+                    <li><a href="../products/products.html">Monitors</a></li>
+                    <li><a href="../products/products.html">Custom PC Quote</a></li>
+                    <li><a href="../products/products.html">Our Stores</a></li>
 
                     <li class="promo-item">
-                        <a href="#" class="promo-link">
+                        <a href="../products/products.html" class="promo-link">
                             <i class="fa-solid fa-percent"></i> Special Deals on Razer
                         </a>
                     </li>
@@ -188,7 +208,7 @@
                         <p class="wishlist-price">₹89,999</p>
 
                         <div class="wishlist-actions">
-                             <button class="btn-outline" onclick="location.href='../producta_details/product_det.html'">
+                            <button class="btn-outline" onclick="location.href='../producta_details/product_det.html'">
                                 View
                             </button>
                             <button class="btn-primary">Add to Cart</button>

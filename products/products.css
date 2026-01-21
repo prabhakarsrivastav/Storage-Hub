@@ -78,23 +78,33 @@
 }
 
 /* Rest of your header styling remains the same but update font-family */
-.main-header, .nav-bar {
-    font-family: 'Bai Jamjuree', sans-serif;
-    /* ... keep previous styles ... */
-}
+/* ================================
+   FIGMA FONT (LOGO ONLY)
+   ================================ */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
-.top-right span {
-    margin-left: 20px;
-}
-
-/* Main Header */
+/* ================================
+   HEADER
+   ================================ */
 .main-header {
     background-color: #000;
     padding: 10px 0;
-    color: white;
+    color: #fff;
 }
 
-/* Logo */
+.main-header .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ================================
+   LOGO
+   ================================ */
 .logo {
     display: flex;
     align-items: center;
@@ -110,61 +120,103 @@
 
 .logo-text {
     display: flex;
-    align-items: baseline;
-    gap: 4px;
-    font-size: 22px;
-    font-weight: 800;
+    align-items: center;
+    gap: 6px;
 }
 
+/* STORAGE */
 .logo-storage {
-    color: var(--color-orange);
-    font-family: 'Comic Sans MS', 'Poppins', cursive, sans-serif;
-    font-weight: 700;
+    font-family: 'Chewy', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    color: #F47E24;
     text-decoration: none;
+    white-space: nowrap;
 }
 
+/* HUB */
 .logo-hub {
-    color: var(--color-white);
-    font-family: 'Comic Sans MS', 'Poppins', cursive, sans-serif;
-    font-weight: 700;
+    font-family: 'Chewy', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    color: #ffffff;
     text-decoration: none;
+    white-space: nowrap;
 }
 
+/* ================================
+   SEARCH BOX
+   ================================ */
 .search-box {
     display: flex;
-    flex-grow: 0.5; /* Adjusted to balance logo and icons */
-    background: white;
+    flex: 1;
+    max-width: 600px;
+    min-width: 220px;
+    background: #fff;
     border-radius: 4px;
     overflow: hidden;
-    margin: 0 40px;
+    margin: 0 20px;
 }
 
 .category-select {
     border: none;
-    padding: 10px 15px;
+    padding: 10px 12px;
     border-right: 1px solid #ddd;
     outline: none;
     background-color: #f9f9f9;
     font-size: 14px;
+    white-space: nowrap;
 }
 
 .search-box input {
     border: none;
-    padding: 10px 15px;
-    flex-grow: 1;
+    padding: 10px 12px;
+    flex: 1;
     outline: none;
     font-size: 14px;
+    min-width: 0; /* IMPORTANT for responsiveness */
 }
 
 .search-btn {
     background-color: #d10000;
-    color: white;
+    color: #fff;
     border: none;
-    padding: 0 25px;
+    padding: 0 18px;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
+    white-space: nowrap;
 }
+
+/* ================================
+   RESPONSIVE (HEADER ONLY)
+   ================================ */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0 0;
+    }
+
+    .category-select {
+        display: none;
+    }
+
+    .search-btn {
+        padding: 0 14px;
+        font-size: 12px;
+    }
+}
+
 
 /* Icons */
 .header-icons {
@@ -613,6 +665,103 @@ body {
 
 .product-card button:hover {
   background: #e10600; /* red on hover */
+}
+
+
+/* hide checkbox */
+.filter-checkbox {
+    display: none;
+}
+
+/* filter button */
+.filter-toggle {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    background: #111;
+    color: #fff;
+    border: 1px solid #222;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* sidebar desktop */
+.filters {
+    width: 260px;
+    background: #0a0a0a;
+    padding: 16px;
+    border: 1px solid #222;
+    color: #fff;
+}
+
+/* header inside filters */
+.filter-header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.close-filters {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* mobile behavior */
+@media (max-width: 768px) {
+
+    .filter-toggle {
+        display: flex;
+    }
+
+    .filters {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        overflow-y: auto;
+        padding: 20px;
+        z-index: 9999;
+        transition: left 0.3s ease;
+    }
+
+    .filter-header {
+        display: flex;
+    }
+
+    /* 🔥 checkbox controls sidebar */
+    .filter-checkbox:checked ~ .filters {
+        left: 0;
+    }
+}
+
+/* layout helpers */
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 6px;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 12px;
 }
 
 

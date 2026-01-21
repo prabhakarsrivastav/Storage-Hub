@@ -53,25 +53,25 @@
 
                 <div class="header-icons">
                     <div class="icon-item">
-                        <i class="fa-regular fa-user"></i>
+                        <a href="../login & registration/login.html" style="text-decoration:none; color:#fff;"><i class="fa-regular fa-user"></i></a>
                         <div class="icon-text">
                             <span class="sub-text">Login</span>
                             <span class="main-text">Account</span>
                         </div>
                     </div>
                     <div class="icon-item badge-container">
-                        <i class="fa-regular fa-heart"></i>
+                        <a href="../whishlist/whishlist.html" style="text-decoration:none; color:#fff;"><i class="fa-regular fa-heart"></i></a>
                         <span class="badge">0</span>
                     </div>
                     <div class="icon-item cart-container">
                         <div class="badge-container">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                           <a href="../cart/cart/cart.html" style="text-decoration:none; color:#fff;"><i class="fa-solid fa-cart-shopping"></i></a>
                             <span class="badge">0</span>
                         </div>
-                        <a href="../cart/cart.html" style="text-decoration: none;">
+                        <a href="../cart/cart/cart.html" style="text-decoration: none;">
                             <div class="icon-text">
                                 <span class="sub-text">Your Cart</span>
-                                <span class="main-text">Rs. 0.00</span>
+                                <span class="main-text" style="text-decoration:none; color:#fff;">Rs. 0.00</span>
                             </div>
                         </a>
                     </div>
@@ -94,20 +94,35 @@
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
 
-                    <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
-                        onmouseout="this.children[1].style.display='none'">
+                    <li style="position:relative;" onmouseenter="this.querySelector('ul').style.display='block'"
+                        onmouseleave="this.querySelector('ul').style.display='none'">
 
                         <a href="#" style="color:#fff; display:flex; align-items:center; gap:6px;">
                             Gaming <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i>
                         </a>
 
-                        <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
-             padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Gaming PCs</a></li>
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Keyboards</a></li>
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Mouse</a></li>
+                        <ul style="
+                                                position:absolute;
+                                                top:100%;
+                                                left:0;
+                                                background:#0a0a0a;
+                                                list-style:none;
+                                                padding:8px 0;
+                                                margin-top:6px;          /* 🔥 hover buffer */
+                                                min-width:180px;
+                                                border:1px solid #222;
+                                                display:none;
+                                                z-index:9999;            /* 🔥 stay above others */
+                                            ">
+                            <li><a href="../products/products.html"
+                                    style="display:block; padding:10px 16px; color:#fff;">Gaming PCs</a></li>
+                            <li><a href="../products/products.html"
+                                    style="display:block; padding:10px 16px; color:#fff;">Keyboards</a></li>
+                            <li><a href="../products/products.html"
+                                    style="display:block; padding:10px 16px; color:#fff;">Mouse</a></li>
                         </ul>
                     </li>
+
 
                     <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
                         onmouseout="this.children[1].style.display='none'">
@@ -118,15 +133,15 @@
 
                         <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
              padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Budget Build</a></li>
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">Mid Range</a></li>
-                            <li><a href="#" style="display:block; padding:10px 16px; color:#fff;">High End</a></li>
+                            <li><a href="../products/products.html" style="display:block; padding:10px 16px; color:#fff;">Budget Build</a></li>
+                            <li><a href="../products/products.html" style="display:block; padding:10px 16px; color:#fff;">Mid Range</a></li>
+                            <li><a href="../products/products.html" style="display:block; padding:10px 16px; color:#fff;">High End</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="#">Monitors</a></li>
+                    <li><a href="../trending/trending.html">Trending</a></li>
                     <li><a href="#">Custom PC Quote</a></li>
-                    <li><a href="#">Our Stores</a></li>
+                    <li><a href="../products/products.html">Our Stores</a></li>
 
                     <li class="promo-item">
                         <a href="#" class="promo-link">
@@ -145,90 +160,106 @@
 
         <div class="layout">
 
-            <!-- ================= SIDEBAR ================= -->
-            <aside class="filters">
+            <!-- FILTER TOGGLE CHECKBOX (hidden) -->
+<input type="checkbox" id="filterToggle" class="filter-checkbox">
 
-                <div class="filter-group">
-                    <h4>Brand</h4>
-                    <div class="two-col">
-                        <label><input type="checkbox"> Acer</label>
-                        <label><input type="checkbox"> ADATA</label>
-                        <label><input type="checkbox"> Colorful</label>
-                        <label><input type="checkbox"> Corsair</label>
-                        <label><input type="checkbox"> Crucial</label>
-                        <label><input type="checkbox"> EVM</label>
-                        <label><input type="checkbox"> G.Skill</label>
-                        <label><input type="checkbox"> Kingston</label>
-                        <label><input type="checkbox"> Netac</label>
-                        <label><input type="checkbox"> Silicon Power</label>
-                        <label><input type="checkbox"> Teamgroup</label>
-                        <label><input type="checkbox"> Thermaltake</label>
-                        <label><input type="checkbox"> V-Color</label>
-                        <label><input type="checkbox"> XPG (ADATA)</label>
-                    </div>
-                </div>
+<!-- FILTER ICON BUTTON -->
+<label for="filterToggle" class="filter-toggle">
+    <i class="fa-solid fa-sliders"></i>
+    Filters
+</label>
 
-                <div class="filter-group">
-                    <h4>Stock Status</h4>
-                    <label><input type="checkbox"> In stock</label>
-                    <label><input type="checkbox"> Out of stock</label>
-                </div>
+<!-- FILTER SIDEBAR -->
+<aside class="filters">
 
-                <div class="filter-group">
-                    <h4>Category</h4>
-                    <label><input type="checkbox"> RAM (Memory)</label>
-                </div>
+    <div class="filter-header">
+        <span>Filters</span>
+        <!-- CLOSE BUTTON -->
+        <label for="filterToggle" class="close-filters">&times;</label>
+    </div>
 
-                <div class="filter-group">
-                    <h4>Ram Capacity</h4>
-                    <div class="two-col">
-                        <label><input type="checkbox"> 4 GB</label>
-                        <label><input type="checkbox"> 8 GB</label>
-                        <label><input type="checkbox"> 16 GB</label>
-                        <label><input type="checkbox"> 24 GB</label>
-                        <label><input type="checkbox"> 32 GB</label>
-                        <label><input type="checkbox"> 48 GB</label>
-                        <label><input type="checkbox"> 64 GB</label>
-                        <label><input type="checkbox"> 96 GB</label>
-                    </div>
-                </div>
+    <div class="filter-group">
+        <h4>Brand</h4>
+        <div class="two-col">
+            <label><input type="checkbox"> Acer</label>
+            <label><input type="checkbox"> ADATA</label>
+            <label><input type="checkbox"> Colorful</label>
+            <label><input type="checkbox"> Corsair</label>
+            <label><input type="checkbox"> Crucial</label>
+            <label><input type="checkbox"> EVM</label>
+            <label><input type="checkbox"> G.Skill</label>
+            <label><input type="checkbox"> Kingston</label>
+            <label><input type="checkbox"> Netac</label>
+            <label><input type="checkbox"> Silicon Power</label>
+            <label><input type="checkbox"> Teamgroup</label>
+            <label><input type="checkbox"> Thermaltake</label>
+            <label><input type="checkbox"> V-Color</label>
+            <label><input type="checkbox"> XPG (ADATA)</label>
+        </div>
+    </div>
 
-                <div class="filter-group">
-                    <h4>Ram Type</h4>
-                    <label><input type="checkbox"> DDR3</label>
-                    <label><input type="checkbox"> DDR4</label>
-                    <label><input type="checkbox"> DDR5</label>
-                </div>
+    <div class="filter-group">
+        <h4>Stock Status</h4>
+        <label><input type="checkbox"> In stock</label>
+        <label><input type="checkbox"> Out of stock</label>
+    </div>
 
-                <div class="filter-group">
-                    <h4>Ram Channel Kit</h4>
-                    <div class="two-col">
-                        <label><input type="checkbox"> 1 x 8 GB</label>
-                        <label><input type="checkbox"> 2 x 8 GB</label>
-                        <label><input type="checkbox"> 2 x 16 GB</label>
-                        <label><input type="checkbox"> 2 x 32 GB</label>
-                        <label><input type="checkbox"> 4 x 8 GB</label>
-                        <label><input type="checkbox"> 4 x 16 GB</label>
-                    </div>
-                </div>
+    <div class="filter-group">
+        <h4>Category</h4>
+        <label><input type="checkbox"> RAM (Memory)</label>
+    </div>
 
-                <div class="filter-group">
-                    <h4>Ram Speed</h4>
-                    <div class="two-col">
-                        <label><input type="checkbox"> 2400 MHz</label>
-                        <label><input type="checkbox"> 2666 MHz</label>
-                        <label><input type="checkbox"> 3200 MHz</label>
-                        <label><input type="checkbox"> 3600 MHz</label>
-                        <label><input type="checkbox"> 4800 MHz</label>
-                        <label><input type="checkbox"> 5200 MHz</label>
-                        <label><input type="checkbox"> 6000 MHz</label>
-                        <label><input type="checkbox"> 6400 MHz</label>
-                        <label><input type="checkbox"> 7200 MHz</label>
-                        <label><input type="checkbox"> 8000 MHz</label>
-                    </div>
-                </div>
+    <div class="filter-group">
+        <h4>Ram Capacity</h4>
+        <div class="two-col">
+            <label><input type="checkbox"> 4 GB</label>
+            <label><input type="checkbox"> 8 GB</label>
+            <label><input type="checkbox"> 16 GB</label>
+            <label><input type="checkbox"> 24 GB</label>
+            <label><input type="checkbox"> 32 GB</label>
+            <label><input type="checkbox"> 48 GB</label>
+            <label><input type="checkbox"> 64 GB</label>
+            <label><input type="checkbox"> 96 GB</label>
+        </div>
+    </div>
 
-            </aside>
+    <div class="filter-group">
+        <h4>Ram Type</h4>
+        <label><input type="checkbox"> DDR3</label>
+        <label><input type="checkbox"> DDR4</label>
+        <label><input type="checkbox"> DDR5</label>
+    </div>
+
+    <div class="filter-group">
+        <h4>Ram Channel Kit</h4>
+        <div class="two-col">
+            <label><input type="checkbox"> 1 x 8 GB</label>
+            <label><input type="checkbox"> 2 x 8 GB</label>
+            <label><input type="checkbox"> 2 x 16 GB</label>
+            <label><input type="checkbox"> 2 x 32 GB</label>
+            <label><input type="checkbox"> 4 x 8 GB</label>
+            <label><input type="checkbox"> 4 x 16 GB</label>
+        </div>
+    </div>
+
+    <div class="filter-group">
+        <h4>Ram Speed</h4>
+        <div class="two-col">
+            <label><input type="checkbox"> 2400 MHz</label>
+            <label><input type="checkbox"> 2666 MHz</label>
+            <label><input type="checkbox"> 3200 MHz</label>
+            <label><input type="checkbox"> 3600 MHz</label>
+            <label><input type="checkbox"> 4800 MHz</label>
+            <label><input type="checkbox"> 5200 MHz</label>
+            <label><input type="checkbox"> 6000 MHz</label>
+            <label><input type="checkbox"> 6400 MHz</label>
+            <label><input type="checkbox"> 7200 MHz</label>
+            <label><input type="checkbox"> 8000 MHz</label>
+        </div>
+    </div>
+
+</aside>
+
 
             <!-- ================= PRODUCTS ================= -->
             <main class="products">
