@@ -92,33 +92,17 @@
                 <!-- Nav Links -->
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
+                    <li style="position:relative;" onmouseover="this.children[1].style.display='block'"
+                        onmouseout="this.children[1].style.display='none'">
 
-                    <li style="position:relative;" onmouseenter="this.querySelector('ul').style.display='block'"
-                        onmouseleave="this.querySelector('ul').style.display='none'">
-
-                        <a href="#" style="color:#fff; display:flex; align-items:center; gap:6px;">
+                    <a href="#" style="color:#fff; display:flex; align-items:center; gap:6px;">
                             Gaming <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i>
                         </a>
 
-                        <ul style="
-                                                position:absolute;
-                                                top:100%;
-                                                left:0;
-                                                background:#0a0a0a;
-                                                list-style:none;
-                                                padding:8px 0;
-                                                margin-top:6px;          /* 🔥 hover buffer */
-                                                min-width:180px;
-                                                border:1px solid #222;
-                                                display:none;
-                                                z-index:9999;            /* 🔥 stay above others */
-                                            ">
-                            <li><a href="../products/products.html"
-                                    style="display:block; padding:10px 16px; color:#fff;">Gaming PCs</a></li>
-                            <li><a href="../products/products.html"
-                                    style="display:block; padding:10px 16px; color:#fff;">Keyboards</a></li>
-                            <li><a href="../products/products.html"
-                                    style="display:block; padding:10px 16px; color:#fff;">Mouse</a></li>
+                        <ul style="position:absolute; top:100%; left:0; background:#0a0a0a; list-style:none;
+             padding:8px 0; margin:0; min-width:180px; border:1px solid #222; display:none;">
+                            <li><a href="../products/products.html" style="display:block; padding:10px 16px; color:#fff;">Gaming PCs</a></li>
+                            <li><a href="../products/products.html" style="display:block; padding:10px 16px; color:#fff;">Gaming Laptops</a></li>
                         </ul>
                     </li>
 
